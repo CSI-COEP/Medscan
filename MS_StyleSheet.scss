@@ -1,0 +1,604 @@
+$light_green:#aef3e2;
+$green : #84DCC6;
+$red :#FF495C;
+$purple :#B8B8F3;
+$dark_purple:#52528C;
+html{
+    margin: 0;
+    font-family: Montserrat;
+    scroll-behavior: smooth;
+    zoom: 0.67;
+body{
+    margin: 0;
+    
+    a{
+        text-decoration: none;
+    }
+
+    .logo-navbar{
+        position: sticky;
+        height: 220px;
+        width: 100%;
+        background-image: url("./Images/XD_SVGs/navbar.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        // align-items: flex-end;
+      justify-content: space-between;
+      h1{
+          color: white;
+          font-size: 60px;
+          margin-left: 40px;
+          margin-top: 20px;
+        }
+        ul{
+            margin-left: 150px;
+            padding: 0;
+            list-style: none;
+            margin-top: 20px;
+
+         li{
+
+             font-size: 45px;
+             margin-right: 140px;
+             display: inline-block;    
+             
+             a{
+                color: $dark_purple;
+                padding: 25px;
+                transition-duration: 0.3s;
+             }
+             a:hover{
+                 background-color: #D9D9FF;
+                 box-shadow: 10px 10px 10px $dark_purple;
+                }
+            a:focus{
+                 background-color: #D9D9FF;
+                 box-shadow: 10px 10px 10px $dark_purple;
+             }
+           
+         }
+        }
+    }
+
+
+        label{
+            font-size: 30px;
+        }
+        input{
+            height: 2rem ;
+            width: 50%;
+            border-radius: 14px;
+            margin: 20px;
+            font-size:25px;
+            border: 4px solid $green;
+        }
+    
+        button{
+            font-size: 2rem;
+            width: 20%;
+            background-color: transparent;
+            border: 3px solid $green;
+            border-radius: 14px;
+            transition-duration: 0.3s;
+        }
+        button:hover{
+           
+            color: $green;
+            box-shadow: $green 1px 1px 1px;    
+            
+        }
+        button:active{
+            outline: none;
+        }
+        button:focus{
+            outline: 1px solid transparent;
+        }
+        input:focus{
+            outline: none;
+            border: $light_green;
+            box-shadow: $green 1px 1px 1px;    
+            
+        }
+        
+    
+    
+    footer{
+        background-image: url("./Images/SVGs/footer.png");
+        height: 350px;
+        width: 100%;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+}
+
+}
+
+
+
+
+
+
+.main{
+
+    margin : 0px 10% 0px 10%;
+    display: flex;
+    justify-content: space-evenly;
+
+    label{
+        font-size: 80px;
+    }
+    .left{
+        width: 45rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .barcode-form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            input{
+                border-radius: 5px ;
+                border: 2px solid $green;
+                height: 5.5rem;
+                width: 80%;
+            }
+            input:placeholder-shown{
+                text-align: center;
+            }
+            input[type="text"] {
+                margin: 20px;
+                font-size:25px;
+            }
+            .next-btn{
+                border-radius: 0 14px 14px 0;
+                height: 6rem;
+            }
+        }
+        .scan-create{
+            display: flex;
+            justify-content: space-around;
+            .scan-btn{
+                border: 3px solid $red;
+            }
+            button{
+                font-size: 25px;
+                height: 80px;
+                width: 250px;
+            }
+        }
+    }
+}
+
+
+.form-div{
+
+display: flex;
+justify-content: space-between;
+margin: 40px 150px 0 150px;
+
+.new-patient-form{
+    font-size: 30px;
+
+    div{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px;
+    }
+}
+
+        label{
+            font-weight: 600;
+        }
+        input{
+            height: 2rem ;
+            width: 50%;
+            border-radius: 14px;
+            border: 4px solid $green;
+        }
+
+        input:placeholder-shown{
+            text-align: center;
+        }
+        input[type="text"] {
+            margin: 20px;
+            font-size:25px;
+        }
+        input[type = "number"] {
+            margin: 20px;
+            font-size:25px;
+        }
+
+        button{
+            font-size: 2rem;
+            height: 3rem;
+            width: 20%;
+        }
+
+    .age-gender-div{
+        .male-btn{
+            border: 2px solid  #8FDDFF;
+        }
+        .female-btn{
+            border: 2px solid #FFB9FF ;
+        }
+        .male-btn:hover{
+            background-color:#8FDDFF ;
+            color: white;
+        }
+        .female-btn:hover{
+            background-color:#FFB9FF ;
+            color: white;
+        }
+    }
+
+
+    #mssg-div{
+        padding: 10px;
+        color: white;
+    }
+    a{
+        text-align: center;
+        background-color: greenyellow;
+        transition-duration: 0.3s;
+        padding: 10px;
+    }
+    a:hover{
+        background-color: rgb(140, 209, 36);
+
+    }
+
+    .form-btns{
+        .submit-btn:hover{
+        background-color: $green;
+        color: $dark_purple;
+        box-shadow: $green 1px 1px 10px;   
+    }
+    .submit-btn:focus{
+        transition-duration: 0.2s;
+        background-color: $green;
+        color: $dark_purple;
+        box-shadow: $light_green 10px 10px 10px; 
+    }
+    .reset-btn{
+        border: 3px solid $red;
+    }
+    .reset-btn:hover{
+        background-color: $red;
+        box-shadow: $red 1px 1px 10px;   
+        color: white;
+    }
+    .reset-btn:focus{
+        box-shadow: $red 1px 1px 30px;   
+        }
+    }
+
+    #Alergies-Added{
+    display: inline;
+        #Alergie-Added{
+            color: white;
+            background-color: #8182ce;
+            box-shadow: 10px 10px 30px $purple ;
+            padding: 15px;
+            margin: 5px;
+            border: 1px solid transparent;
+            border-radius: 26px;
+        }
+    }
+        #PHCs-Added{
+            display: inline;
+            #PHC-Added{
+                color: white;
+                background-color: #CED4DA;
+                box-shadow: 10px 10px 30px #dbdbdb ;
+                padding: 15px;
+                margin: 5px;
+                border: 1px solid;
+                border-radius: 26px;
+            }
+        }
+    
+}
+
+
+// -------- Enter Barcode ------------
+
+
+.barcode-container{
+    height: 70vh;
+    margin: 0 20% 0 20%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 60px;
+    
+   
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        .form-inputs{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            input[type="text"]{
+                margin: 0;
+                width: 40rem;
+                font-size: 2rem;
+                height: 90px;
+                border-radius: 14px 0px 0 14px;
+                border: 2px solid $purple;
+            }
+
+            .submit-btn{       
+                border: 2px solid $green;
+                border-radius: 0px 14px 14px 0px;
+                height: 96px;
+                transition-duration: 0.3s;
+            }
+            .submit-btn:hover{
+                background-color: $light_green;
+                box-shadow: 5px 5px 15px $green;
+            }
+        }
+        .form-buttons{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10%;
+            .scan-btn{
+                font-size: 40px;
+                height: 20%;
+                width: 40%;
+                border: 2px solid $red;
+                transition-duration: 0.3s;
+                padding: 15px;
+            }
+            .scan-btn:hover{
+                background-color: $red;
+                color: white;
+            }
+            a{
+                padding: 10px;
+                font-size: 3rem;
+                height: 20%;
+                width: 40%;  
+                border: 2px solid $green;
+                border-radius: 14px;
+                transition-duration: 0.3s;
+            }
+            a:hover{
+                background-color: $green;
+                color: white;
+            }
+        }
+    }
+}
+
+// --------- HomePage --------------- 
+
+.homepage{
+    margin: 40px 150px 0 150px;
+    .homepage-content{
+        // width: 1em;
+        display: flex;
+        justify-content: space-between;
+        font-size: 2rem;
+        .about{
+            width: 45%;
+
+            div{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                span{
+                    font-weight: 1200;
+                }
+            }
+            }
+
+            .notes{
+                border: 4px solid $purple;
+                border-radius: 14px;
+                box-shadow: $purple 10px 10px 10px;
+                font-size: 40px;
+                width: 40%;
+            
+                h3{
+                    padding: 10px;
+                    background-color: rgba(90, 120, 252, 0.719);
+                    color: aliceblue;
+                    margin-bottom: 0px;
+                }
+            
+                .fa-plus-circle{
+                    float: right;
+                    color: #e1faf3;
+            
+                }
+            
+            
+                .inner-list span{
+                    background-color: rgb(230, 80, 80);
+                    color: #e1faf3;
+                    margin-right: 10px;
+                    text-align: center;
+                    height: 50px;
+                    width: 0px;
+                    opacity: 0;
+                    display: inline-block;
+                    transition: 0.5s linear;
+            
+                }
+                li:hover span{
+                    width: 50px;
+                    opacity: 1;
+                }
+            
+                input{
+            
+                    background-color: #e1faf3;
+                    width: 100%;
+                    border: none;
+                    padding: 20px 0 20px 0;
+                    border-radius: 5px;
+                    margin: 0;
+                    margin-bottom: 15px;
+                }
+            
+                    input[type="text"] {
+                        font-size:25px;
+                    }
+                    input[type = "number"] {
+                        font-size:25px;
+                    }
+            
+                    input:focus{
+                        outline: solid 3px #b7ffea ;
+                        background-color: #e1faf3;
+                        transition-duration: 0.5s;
+                    }
+            
+                .inner-list{
+                    padding: 0;
+                }
+                .inner-list li{
+                    width: 100%;
+                    margin-left: 0;
+                    list-style: none;
+                    background-color: #b8efff;
+                    margin-bottom: 5px;
+                    height: 50px;
+                }
+                .inner-list li:nth-child(even){
+                    background-color: #8182ce;
+                    color: rgb(247, 247, 247);
+                }
+            }
+            .task-completed{
+                color: gray;
+                text-decoration: line-through;
+                transition-duration: 1s;
+            }
+    
+            
+        }
+
+    // APPOINTMENT REGISTER    
+
+
+   
+        
+    .appointment_register{
+
+
+        
+        font-size: 60px;
+        display: flex;
+        justify-content: space-around;
+        .appointment_card{
+            
+            width: 30%;
+            height: 800px;
+            border: 1px solid $dark_purple;
+            border-radius: 14px;
+            
+            .appt_date{
+                border: 1px solid $dark_purple;
+                border-radius: 14px;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+            .visit{
+                margin-top: 10px ;
+                width: 100%;
+                font-size: 50px;
+                display: flex;
+                flex-direction: column;
+                div{
+                    display: flex;
+                    
+                    justify-content: space-around;
+                    align-items: center;
+                    border: 1px solid $dark_purple;
+                    .dt_time{
+                        border:none;
+                        font-size: 30px;
+                    }
+                }
+                .visit-info{
+                    border: 1px solid rgb(131, 131, 131);
+                    background-color: #adaeff;
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+
+    // SPECIMEN REGISTER
+        .new_spec_form_class{
+           display: flex;
+           flex-direction: column;
+            div{
+                text-align: left;
+                display: flex;
+                justify-content: space-around;
+                input{
+                    width: 1200px;
+                    padding: 8px;
+                }
+            }
+        }
+        .specimen_register{
+            font-size: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            .specimen-card{
+                border: 3px solid $dark_purple ;
+                border-radius: 5px;
+                margin: 20px;
+                padding: 20px;
+                // width: 200px;
+                flex: 1 1 500px;
+            }
+        }
+    
+        
+}
+
+
+// DYNAMIC ADDITIONAL CLASSES
+
+.gender-male{
+    background-color:#8FDDFF ;
+    color: white;
+}
+.gender-female{
+    background-color:#FFB9FF ;
+    color: white;
+}
+
+.success{
+    transition-duration: 0.5s;
+    background-color: #84DCC6;
+    color: white;
+}
+.error{
+    transition-duration: 0.5s;
+    background-color: $red;
+
+}
+
+.hide{
+    transition-duration:0.5s ;
+    display: none;
+}
+.show{
+    transition-duration:0.5s ;
+    display: block;
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="MS_StyleSheet.css">
+</head>
+<body onload="onLoadPage()">
+    
+    <nav class="logo-navbar">
+
+        <ul>
+            <li> <a href="#homepage"> About </a></li>
+            <li><a href="#appointment_register"> Appointment register </a></li>
+            <li><a href="#specimen_regi"> Specimen register</a></li>
+        </ul>
+    </nav>
+
+<section class="homepage" id="homepage">
+   
+    <div class="homepage-content">
+
+        <div class="about">
+
+            <h1>ABOUT</h1>
+        
+            <h2>Personal Details</h2>
+                <hr>
+
+                <div class="fullName-div">
+                    <p> Full Name : </p>
+                    <span id="name-span">-</span>
+                </div>
+
+                <div class="height-weight" style="display: flex ; justify-content: space-between;">
+                    <p>Height :</p>
+                    <span id="height-span">-</span>
+                    <span>Cms </span> 
+
+                    <p>Weight :</p>
+                    <span id="weight-span">-</span>
+                    <span>Kgs </span> 
+
+                </div>
+
+                <div class="age-gender-div" >
+                    <p>Age :</p>
+                    <span id="age-span">-</span>
+                    <div>
+                        <p>Gender :</p>
+                        <span id="gender-span">MALE</span>
+                    </div>
+                </div>
+                
+                <h2>Addition Information</h2>
+                <hr>
+                
+                <div class="bloodgrp">
+                    <p> Blood Group :</p>
+                    <span id="blood-group-span">-</span>
+
+                </div>
+
+                <div class="alergies">
+                    <p>Allergies :</p>
+                    <span id="alergies-span">-</span>
+
+                </div>
+
+                <div class="PHCs">
+                    <p >Previous Health Condition :</p>
+                    <span id="PHCs-span">-</span>
+
+                </div>
+
+        </div>
+
+
+        <div class="notes">
+
+     
+                <h3> Notes / To-Do List <i class="fa fa-plus-circle" aria-hidden="true"></i></h3>
+        
+                <input type="text" placeholder="Add Items">
+        
+                <ul class="inner-list ">
+                    <li> <span><i class="fa fa-trash"></i></span> loss of appetite</li>
+                    <li> <span><i class="fa fa-trash"></i></span> Sore Throat from 2 days</li>
+                    <li> <span><i class="fa fa-trash"></i></span> Give Insulin Daily at 1200</li>
+        
+                </ul>
+        
+        
+   
+        </div>
+ 
+    </div>
+
+
+    <h1 style="font-size: 60px;">Appointment Register</h1>
+
+    <section class="appointment_register" id="appointment_register">
+
+
+        <div class="appointment_card">
+            <span>
+                <span class="appt_date">21-01-21 <span><img src="./Images/XD_SVGs/plus.svg" alt=""></span>
+
+                </span>
+            </span> 
+          
+
+            <div class="visit">
+              
+                <div>
+                    visit 1 <span> <img src="./Images/XD_SVGs/Expand_Arrow.svg" height="100" alt="expand_arrow"></span>
+                    <div class="dt_time">pulse :102 <br>  Time : 10:20 pm</div>
+                </div>
+               
+                <div class="visit-info"> Checked Vitals</div>
+                <div class="visit-info"> Osmo 2 tabs - eve</div>
+            </div>
+
+            <div class="visit">
+                <div>
+                    visit 2 <span> <img src="./Images/XD_SVGs/Expand_Arrow.svg" height="100" alt="expand_arrow"></span>
+                    <div class="dt_time">pulse :98 <br>Time : 08:05 am</div>
+                </div>            
+            </div>
+
+        </div>
+
+        <div class="appointment_card">
+            <span class="appt_date">02-02-21 <span><img src="./Images/XD_SVGs/plus.svg" alt=""></span></span>
+          
+
+            <div class="visit">
+                <div>
+                    visit 1 <span> <img src="./Images/XD_SVGs/Expand_Arrow.svg" height="100" alt="expand_arrow"></span>
+                    <div class="dt_time">pulse :95 <br>  Time : 01:00 pm</div>
+                </div>     
+                
+                <div class="visit-info"> Insulin - 10 ml</div>
+            </div>
+        
+        </div>
+
+        <div class="appointment_card">
+            <span class="appt_date">10-03-21 <span><img src="./Images/XD_SVGs/plus.svg" alt=""></span></span>
+          
+
+            <div class="visit">
+                <div>visit 1 <span> <img src="./Images/XD_SVGs/Expand_Arrow.svg" height="100" alt="expand_arrow"></span></div>
+            </div>
+            <div class="visit">
+                <div>visit 2 <span> <img src="./Images/XD_SVGs/Expand_Arrow.svg" height="100" alt="expand_arrow"> </span></div>
+            </div>
+            <div class="visit">
+                <div>visit 3 <span> <img src="./Images/XD_SVGs/Expand_Arrow.svg" height="100" alt="expand_arrow"> </span></div>
+            </div>
+        </div>
+
+    </section>
+    
+
+
+
+
+
+
+
+    <h1 style="font-size: 60px;" id="specimen_reg">Specimen Register <button onclick="newSpecForm()" style="height:40px">Add Specimen Data</button></h1>
+    
+    <div class="hide new_spec_form_clas" id="new_spec_form">
+
+        <div class="new_spec_form_class">
+
+            <div>
+                <label for="new_spec_name"> Speciem Name :</label>
+                <input type="text" id="new_spec_name">
+            </div>
+            <br>
+            <div>
+                <label for="new_spec_date"> Date of Issue :</label>
+                <input type="date" id="new_spec_date">
+            </div>
+            <br>
+            <div>
+                <label for="new_spec_time"> Time Of Issue :</label>
+                <input type="time" id="new_spec_time">    
+            </div>
+            <br>
+            <div>
+                <button onclick="addSpecimen()"> Add Specimen</button>
+            </div>
+        
+            <div class=" hide spec_form_errormssg" id="spec_form_errormssg" style="padding: 10px; font-size: 30px; margin: 20px;" >
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <hr>
+    <section class="specimen_register" id="specimen_register">
+        <!-- <div class="specimen-card">
+
+            <label> Name :</label> 
+            <span  > - </span> <br>
+            <label> Date :</label> 
+            <span  > - </span> <br>
+            <label> Time :</label> 
+            <span  > - </span> <br>
+
+        </div> -->
+    </section>
+    <hr>
+
+</section>
+
+
+
+
+<footer >
+
+</footer> 
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
+     
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./Scripts/to_doList.js"></script>
+        <script src="./Scripts/MS_Script.js"></script>
+    </body>
+</html>

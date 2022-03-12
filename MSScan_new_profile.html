@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Profile</title>
+    <link rel="stylesheet" href="MS_StyleSheet.css">
+</head>
+<body>
+
+    <nav class="logo-navbar">
+        <h1> Create New Patient Profile</h1>
+      
+    </nav>
+
+<div class="form-div">
+
+    <div class="new-patient-form">
+        
+        <h2>Personal Details</h2>
+        <hr>
+           
+            <div class="fullName-div">
+                <label for="full_name">Full Name* </label>
+                <input type="text" id="full_name" style="width: 70%;" >
+            </div>
+
+            <div class="height-weight" style="display: flex ; justify-content: space-between;">
+                
+                <label for="height">Height* </label>
+                <input type="number"  name="height" id="height" style="width: 20%;"  > Cms 
+                <label for="weight"> Weight* </label>
+                <input type="number"  name="weight" id="weight" style="width: 30%;" > Kgs
+            </div>
+
+            <div class="age-gender-div" >
+                <label for="age">Age* </label>
+                <input type="number" id="age" >
+                
+                <label>Gender* </label>
+                <button type="button" class="male-btn" id="male-btn" onclick="setMale()">Male</button> | <button type="button" class="female-btn" id="female-btn" onclick="setFemale()" >Female</button>
+            </div>
+
+            <div class="Set_Pin">
+                <label for="pin">Enter Security Pin*</label>
+                <input type="number" id="pin" >
+            </div>
+            
+            <h2>Addition Information</h2>
+            <hr>
+            
+            <div class="bloodgrp">
+                <label for="blood-grp">Blood Group :</label>
+                <input type="text" id="blood-grp" >
+            </div>
+
+            <div class="alergies">
+                <label for="Alergies">Allergies :</label>
+                <input type="text"  name="Alergies" id="Alergies">
+                <button onclick="updateAlergies()" >Add</button>
+            </div>
+            <div id="Alergies-Added">
+            </div>
+            
+            <div class="PHCs">
+                <label for="PHC">Previous Health Condition :</label>
+                <input type="text"  name="PHC" id="PHC">
+                <button onclick="updatePHC()" >Add</button>
+            </div>
+            <div id="PHCs-Added">    
+            </div>
+            
+
+            <div id="mssg-div">
+                -
+            </div>
+
+            
+                <a href="scan_barcode.html" class="hide" id="linkToLoginPage"  > 
+                    Go To Login Page <img src="./Images/XD_SVGs/Submit_Arrow.svg"  style="height:30px"> 
+                </a>
+      
+
+            <div class="form-btns">
+                
+                <button  class="submit-btn" id="submit-btn" style="width: 50%;" onclick="submitForm()" >Create New Profile</button>               
+                <button onclick="resetForm()" class="reset-btn">Clear</button>
+
+            </div>
+
+            <div>
+                <button class="submit-btn hide" id="reactivate-submit" onclick="reactivateSubmit()" style="width: 100%;">Create Another Profile</button>
+            </div>
+                
+      
+
+        </div>
+
+
+        <div class="right-img" >
+            <img src="./Images/XD_SVGs/create-new-profile.svg" alt="">
+        </div>
+
+
+    </div>
+
+
+<footer >
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+        
+        
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
+
+<script>
+
+    // var firebaseConfig = {
+    //     apiKey: "AIzaSyBJHf2Dyia-4EL8JVudp33B9T930Bt7Uos",
+    //     authDomain: "medscan-bd3f1.firebaseapp.com",
+    //     databaseURL: "https://medscan-bd3f1.firebaseio.com",
+    //     projectId: "medscan-bd3f1",
+    //     storageBucket: "medscan-bd3f1.appspot.com",
+    //     messagingSenderId: "544262913242",
+    //     appId: "1:544262913242:web:f3d3e5dbac87c5869039e3",
+    //     measurementId: "G-6TKMDDPF5F"
+    // };
+    // // Initialize Firebase
+    // firebase.initializeApp(firebaseConfig);
+</script>
+
+<script src="./Scripts/new_profile.js"></script>
+<!-- <script src="./Scripts/MS_Script.js"></script> -->
+
+</body>
+</html>
