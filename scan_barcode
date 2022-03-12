@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="MS_StyleSheet.css">
+</head>
+<body>
+
+<nav class="logo-navbar">
+    <h1>Welcome Doctor :D</h1>
+</nav>
+
+    <div class="barcode-container" >
+
+        <form action="MS_homePage.html" onsubmit="barcodeEntered()">
+            <div class="form">
+                
+                <!-- <label for="otp_input"><b> Enter Barcode : </b></label> <br> -->
+
+                <!-- <div class="form-inputs" style="display: inline;"> -->
+                    <!-- <input type="text" id="barcode_input"> -->
+                
+                <!-- </div> -->
+<br>
+                <label><b> Enter Barcode :</b></label>
+                <div class="form-inputs" style="margin-top: 20px;">
+                    
+                    <input type="text" id="barcode_input">
+                    <button type="submit" class="submit-btn">
+                            <img src="./Images/XD_SVGs/Submit_Arrow.svg" alt="">
+                    </button>
+                </div>
+                <div class="form-buttons">
+                    <a class="scan-btn">Scan Barcode</a>
+                    <a href="MSScan_new_profile.html">New Profile</a>
+                </div>
+                
+            </div>
+        </form>
+
+        <div class="barcode-img">
+            <img src="./Images/SVGs/barcode-scanner.svg" alt="">
+        </div>
+
+    </div>
+
+
+    
+
+
+
+
+
+<footer >
+</footer>
+        
+
+
+
+
+
+
+
+
+    <!-- SCRIPTS -->
+
+            <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
+
+
+<script src="./Scripts/MS_Script.js"></script>
+</body>
+</html>
